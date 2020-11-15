@@ -24,12 +24,18 @@ function Profil(props) {
       </div>
     );
   }
-   Profil.prototype={ 
-    FullName:PropTypes.string,
-    Bio:PropTypes.string,
-    Profission:PropTypes.string
+ 
 
-   };
+
+   Profil.propTypes = {
+    user: PropTypes.shape({
+      FullName: PropTypes.string,
+      Bio: PropTypes.string,
+      Profission: PropTypes.string,
+    }),
+    
+  };
+   
   
   export default Profil;
   
